@@ -19,7 +19,7 @@ public class Main {
         if (!event.getMessage().getContentRaw().equals("emotes")) return;
 
         System.out.println(event.getGuild().getName() + " emotes:");
-        event.getGuild().getEmotes().forEach(emote -> System.out.println(emote.getName()));
+        event.getGuild().getEmotes().forEach(emote -> System.out.println(":" + emote.getName() + ":"));
     }
 
 }
